@@ -1,0 +1,81 @@
+-------------------------------------------------------------------------------
+Test set: MatrixSumming2Test
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.005 s <<< FAILURE! -- in MatrixSumming2Test
+MatrixSumming2Test.sumWorksInCorners -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: toString() should show the matrix, one row per line ==> expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:239)
+	at MatrixSumming2Test.readMatrix(MatrixSumming2Test.java:23)
+	at MatrixSumming2Test.sumWorksInCorners(MatrixSumming2Test.java:74)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+MatrixSumming2Test.sumDoesNotChangeTheMatrix -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: sum(0, 0) should include the cell itself ==> expected: not equal but was: <0>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:152)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNotEquals.failEqual(AssertNotEquals.java:277)
+	at org.junit.jupiter.api.AssertNotEquals.assertNotEquals(AssertNotEquals.java:94)
+	at org.junit.jupiter.api.Assertions.assertNotEquals(Assertions.java:2023)
+	at MatrixSumming2Test.sumDoesNotChangeTheMatrix(MatrixSumming2Test.java:121)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+MatrixSumming2Test.sumMatchesExpectedForEveryCell -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: toString() should show the matrix, one row per line ==> expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:239)
+	at MatrixSumming2Test.readMatrix(MatrixSumming2Test.java:23)
+	at MatrixSumming2Test.sumMatchesExpectedForEveryCell(MatrixSumming2Test.java:63)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+MatrixSumming2Test.toStringShowsARectangularMatrix -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: toString() should show the matrix, one row per line ==> expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:239)
+	at MatrixSumming2Test.readMatrix(MatrixSumming2Test.java:23)
+	at MatrixSumming2Test.toStringShowsARectangularMatrix(MatrixSumming2Test.java:51)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+MatrixSumming2Test.sumWorksOnEdgesThatAreNotCorners -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: toString() should show the matrix, one row per line ==> expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:239)
+	at MatrixSumming2Test.readMatrix(MatrixSumming2Test.java:23)
+	at MatrixSumming2Test.sumWorksOnEdgesThatAreNotCorners(MatrixSumming2Test.java:86)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
+MatrixSumming2Test.sumWorksOnInteriorCellsWhenTheyExist -- Time elapsed: 0 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: toString() should show the matrix, one row per line ==> expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertFalse.failNotFalse(AssertFalse.java:63)
+	at org.junit.jupiter.api.AssertFalse.assertFalse(AssertFalse.java:36)
+	at org.junit.jupiter.api.Assertions.assertFalse(Assertions.java:239)
+	at MatrixSumming2Test.readMatrix(MatrixSumming2Test.java:23)
+	at MatrixSumming2Test.sumWorksOnInteriorCellsWhenTheyExist(MatrixSumming2Test.java:107)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+
